@@ -4,7 +4,7 @@
 import Foundation
 
 /// CompatibleWrapper
-struct CompatibleWrapper<Base> {
+public struct CompatibleWrapper<Base> {
     public let base: Base
     public init(base: Base) {
         self.base = base
@@ -12,7 +12,7 @@ struct CompatibleWrapper<Base> {
 }
 
 /// Compatible
-protocol Compatible: AnyObject {}
+public protocol Compatible: AnyObject {}
 extension Compatible {
     /// CompatibleWrapper<Self>
     public var hub: CompatibleWrapper<Self> {
@@ -22,7 +22,7 @@ extension Compatible {
 }
 
 /// CompatibleValue
-protocol CompatibleValue {}
+public protocol CompatibleValue {}
 extension CompatibleValue {
     /// CompatibleWrapper<Self>
     public var hub: CompatibleWrapper<Self> {
