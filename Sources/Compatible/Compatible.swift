@@ -36,4 +36,9 @@ extension CompatibleValue {
         set { }
     }
     
+    /// CompatibleWrapper<Self>
+    public static var hub: CompatibleWrapper<Self>.Type {
+        get { CompatibleWrapper<Self>.self }
+        set {  }
+    }
 }
