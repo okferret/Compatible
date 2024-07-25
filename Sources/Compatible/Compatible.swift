@@ -5,7 +5,7 @@ import Foundation
 
 /// CompatibleWrapper
 public struct CompatibleWrapper<Base> {
-    public let base: Base
+    public var base: Base
     public init(base: Base) {
         self.base = base
     }
